@@ -1,0 +1,510 @@
+2016-10-23 11:59:15,014 [8] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-23 11:59:17,283 [8] ERROR inputApplication.Utility [(null)] - GetDataFromservice:: System.Net.WebException: Der kunne ikke oprettes forbindelse til fjernserveren ---> System.Net.Sockets.SocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det [::1]:65184
+   ved System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   ved System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.OpenRead(Uri address)
+   ved System.Net.WebClient.OpenRead(String address)
+   ved inputApplication.Utility.GetDataFromService() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 128
+2016-10-23 12:00:35,910 [10] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-23 12:00:36,090 [10] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Ends
+2016-10-23 12:00:36,093 [10] INFO  inputApplication.Utility [(null)] - GetTemplateFromService:: Start
+2016-10-23 12:00:36,114 [10] INFO  inputApplication.Utility [(null)] - GetTemplateFromService:: Ends
+2016-10-23 12:10:40,664 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-23 12:10:40,713 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-23 12:10:40,768 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-23 12:10:40,775 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-23 12:10:40,876 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-23 12:10:40,878 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-23 12:10:40,920 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-23 12:10:40,922 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-23 12:10:40,946 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-23 12:10:40,948 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-23 12:10:53,925 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-23 12:10:53,927 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-23 12:10:53,930 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-23 12:10:53,933 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-23 12:10:53,980 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-23 12:10:53,983 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-23 12:10:54,016 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-23 12:10:54,020 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-23 21:43:47,819 [9] INFO  inputApplication.Utility [(null)] - WriteDataToService:: Start inputparam = 7:TESTFFF
+2016-10-23 21:44:21,439 [9] ERROR inputApplication.Utility [(null)] - WriteDataToService:: System.Net.WebException: Den underliggende forbindelse blev lukket: Der opstod en uventet fejl ved modtagelse.. ---> System.IO.IOException: Der kunne ikke læses data fra transportforbindelsen: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært. ---> System.Net.Sockets.SocketException: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært
+   ved System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   ved System.Net.WebClient.UploadString(Uri address, String method, String data)
+   ved System.Net.WebClient.UploadString(String address, String method, String data)
+   ved inputApplication.Utility.WriteDataToService(String propertyValuesString) i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 168
+2016-10-23 21:44:45,383 [9] INFO  inputApplication.Utility [(null)] - WriteDataToService:: Start inputparam = 7:TESTFFF
+2016-10-23 21:44:47,564 [9] ERROR inputApplication.Utility [(null)] - WriteDataToService:: System.Net.WebException: Der kunne ikke oprettes forbindelse til fjernserveren ---> System.Net.Sockets.SocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det [::1]:65184
+   ved System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   ved System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   ved System.Net.WebClient.UploadString(Uri address, String method, String data)
+   ved System.Net.WebClient.UploadString(String address, String method, String data)
+   ved inputApplication.Utility.WriteDataToService(String propertyValuesString) i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 168
+2016-10-23 21:45:46,366 [9] INFO  inputApplication.Utility [(null)] - WriteDataToService:: Start inputparam = 7:TESTFFF
+2016-10-23 21:46:12,292 [9] ERROR inputApplication.Utility [(null)] - WriteDataToService:: System.Net.WebException: Den underliggende forbindelse blev lukket: Der opstod en uventet fejl ved modtagelse.. ---> System.IO.IOException: Der kunne ikke læses data fra transportforbindelsen: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært. ---> System.Net.Sockets.SocketException: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært
+   ved System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   ved System.Net.WebClient.UploadString(Uri address, String method, String data)
+   ved System.Net.WebClient.UploadString(String address, String method, String data)
+   ved inputApplication.Utility.WriteDataToService(String propertyValuesString) i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 168
+2016-10-23 21:47:10,115 [8] INFO  inputApplication.Utility [(null)] - WriteDataToService:: Start inputparam = =7:TESTFFF
+2016-10-23 21:47:16,395 [8] ERROR inputApplication.Utility [(null)] - WriteDataToService:: System.Net.WebException: Den underliggende forbindelse blev lukket: Der opstod en uventet fejl ved modtagelse.. ---> System.IO.IOException: Der kunne ikke læses data fra transportforbindelsen: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært. ---> System.Net.Sockets.SocketException: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært
+   ved System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   ved System.Net.WebClient.UploadString(Uri address, String method, String data)
+   ved System.Net.WebClient.UploadString(String address, String method, String data)
+   ved inputApplication.Utility.WriteDataToService(String propertyValuesString) i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 168
+2016-10-23 21:51:25,923 [10] INFO  inputApplication.Utility [(null)] - WriteDataToService:: Start inputparam = =7:TESTFFF
+2016-10-23 21:51:32,747 [10] ERROR inputApplication.Utility [(null)] - WriteDataToService:: System.Net.WebException: Den underliggende forbindelse blev lukket: Der opstod en uventet fejl ved modtagelse.. ---> System.IO.IOException: Der kunne ikke læses data fra transportforbindelsen: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært. ---> System.Net.Sockets.SocketException: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært
+   ved System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   ved System.Net.WebClient.UploadString(Uri address, String method, String data)
+   ved System.Net.WebClient.UploadString(String address, String method, String data)
+   ved inputApplication.Utility.WriteDataToService(String propertyValuesString) i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 168
+2016-10-23 23:55:01,966 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-23 23:55:03,382 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-23 23:55:03,434 [9] ERROR inputApplication.Utility [(null)] - GetTemplateDataFromFile:: 
+System.IO.FileNotFoundException: Filen 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata' blev ikke fundet.
+Filnavn: 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata'
+   ved System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   ved System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   ved System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   ved System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   ved System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   ved System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   ved System.Threading.CompressedStack.runTryCode(Object userData)
+   ved System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   ved System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   ved System.Xml.XmlTextReaderImpl.OpenUrl()
+   ved System.Xml.XmlTextReaderImpl.Read()
+   ved System.Xml.XmlTextReader.Read()
+   ved System.Xml.XmlReader.MoveToContent()
+   ved System.Data.DataTable.ReadXml(XmlReader reader, Boolean denyResolving)
+   ved System.Data.DataTable.ReadXml(String fileName)
+   ved inputApplication.Utility.GetTemplateDataFromFile() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 117
+2016-10-23 23:58:29,754 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-23 23:58:30,100 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-23 23:58:30,152 [9] ERROR inputApplication.Utility [(null)] - GetTemplateDataFromFile:: 
+System.IO.FileNotFoundException: Filen 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata' blev ikke fundet.
+Filnavn: 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata'
+   ved System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   ved System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   ved System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   ved System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   ved System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   ved System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   ved System.Threading.CompressedStack.runTryCode(Object userData)
+   ved System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   ved System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   ved System.Xml.XmlTextReaderImpl.OpenUrl()
+   ved System.Xml.XmlTextReaderImpl.Read()
+   ved System.Xml.XmlTextReader.Read()
+   ved System.Xml.XmlReader.MoveToContent()
+   ved System.Data.DataTable.ReadXml(XmlReader reader, Boolean denyResolving)
+   ved System.Data.DataTable.ReadXml(String fileName)
+   ved inputApplication.Utility.GetTemplateDataFromFile() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 117
+2016-10-23 23:59:52,098 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-23 23:59:52,283 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-23 23:59:52,357 [9] ERROR inputApplication.Utility [(null)] - GetTemplateDataFromFile:: 
+System.IO.FileNotFoundException: Filen 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata' blev ikke fundet.
+Filnavn: 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata'
+   ved System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   ved System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   ved System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   ved System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   ved System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   ved System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   ved System.Threading.CompressedStack.runTryCode(Object userData)
+   ved System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   ved System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   ved System.Xml.XmlTextReaderImpl.OpenUrl()
+   ved System.Xml.XmlTextReaderImpl.Read()
+   ved System.Xml.XmlTextReader.Read()
+   ved System.Xml.XmlReader.MoveToContent()
+   ved System.Data.DataTable.ReadXml(XmlReader reader, Boolean denyResolving)
+   ved System.Data.DataTable.ReadXml(String fileName)
+   ved inputApplication.Utility.GetTemplateDataFromFile() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 117
+2016-10-24 00:02:22,238 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 00:02:22,448 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 00:02:22,490 [10] ERROR inputApplication.Utility [(null)] - GetTemplateDataFromFile:: 
+System.IO.FileNotFoundException: Filen 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata' blev ikke fundet.
+Filnavn: 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata'
+   ved System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   ved System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   ved System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   ved System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   ved System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   ved System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   ved System.Threading.CompressedStack.runTryCode(Object userData)
+   ved System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   ved System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   ved System.Xml.XmlTextReaderImpl.OpenUrl()
+   ved System.Xml.XmlTextReaderImpl.Read()
+   ved System.Xml.XmlTextReader.Read()
+   ved System.Xml.XmlReader.MoveToContent()
+   ved System.Data.DataTable.ReadXml(XmlReader reader, Boolean denyResolving)
+   ved System.Data.DataTable.ReadXml(String fileName)
+   ved inputApplication.Utility.GetTemplateDataFromFile() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 123
+2016-10-24 00:04:21,183 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 00:04:26,778 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 00:04:46,315 [10] ERROR inputApplication.Utility [(null)] - GetTemplateDataFromFile:: 
+System.IO.FileNotFoundException: Filen 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata' blev ikke fundet.
+Filnavn: 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata'
+   ved System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   ved System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   ved System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   ved System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   ved System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   ved System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   ved System.Threading.CompressedStack.runTryCode(Object userData)
+   ved System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   ved System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   ved System.Xml.XmlTextReaderImpl.OpenUrl()
+   ved System.Xml.XmlTextReaderImpl.Read()
+   ved System.Xml.XmlTextReader.Read()
+   ved System.Xml.XmlReader.MoveToContent()
+   ved System.Data.DataTable.ReadXml(XmlReader reader, Boolean denyResolving)
+   ved System.Data.DataTable.ReadXml(String fileName)
+   ved inputApplication.Utility.GetTemplateDataFromFile() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 123
+2016-10-24 08:06:19,444 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 08:06:27,647 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 08:06:30,010 [9] ERROR inputApplication.Utility [(null)] - GetTemplateDataFromFile:: 
+System.IO.FileNotFoundException: Filen 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata' blev ikke fundet.
+Filnavn: 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata'
+   ved System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   ved System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   ved System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   ved System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   ved System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   ved System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   ved System.Threading.CompressedStack.runTryCode(Object userData)
+   ved System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   ved System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   ved System.Xml.XmlTextReaderImpl.OpenUrl()
+   ved System.Xml.XmlTextReaderImpl.Read()
+   ved System.Xml.XmlTextReader.Read()
+   ved System.Xml.XmlReader.MoveToContent()
+   ved System.Data.DataTable.ReadXml(XmlReader reader, Boolean denyResolving)
+   ved System.Data.DataTable.ReadXml(String fileName)
+   ved inputApplication.Utility.GetTemplateDataFromFile() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 123
+2016-10-24 08:06:50,758 [9] INFO  inputApplication.Utility [(null)] - GetTemplateFileFromService:: Start
+2016-10-24 08:08:31,902 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 08:08:37,507 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 08:08:40,491 [8] ERROR inputApplication.Utility [(null)] - GetTemplateDataFromFile:: 
+System.IO.FileNotFoundException: Filen 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata' blev ikke fundet.
+Filnavn: 'C:\Compare\inputApplication\inputApplication\bin\Debug\templatesdata'
+   ved System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   ved System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   ved System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   ved System.Xml.XmlDownloadManager.GetStream(Uri uri, ICredentials credentials, IWebProxy proxy, RequestCachePolicy cachePolicy)
+   ved System.Xml.XmlUrlResolver.GetEntity(Uri absoluteUri, String role, Type ofObjectToReturn)
+   ved System.Xml.XmlTextReaderImpl.OpenUrlDelegate(Object xmlResolver)
+   ved System.Threading.CompressedStack.runTryCode(Object userData)
+   ved System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   ved System.Threading.CompressedStack.Run(CompressedStack compressedStack, ContextCallback callback, Object state)
+   ved System.Xml.XmlTextReaderImpl.OpenUrl()
+   ved System.Xml.XmlTextReaderImpl.Read()
+   ved System.Xml.XmlTextReader.Read()
+   ved System.Xml.XmlReader.MoveToContent()
+   ved System.Data.DataTable.ReadXml(XmlReader reader, Boolean denyResolving)
+   ved System.Data.DataTable.ReadXml(String fileName)
+   ved inputApplication.Utility.GetTemplateDataFromFile() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 123
+2016-10-24 08:11:24,335 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 08:11:52,173 [10] INFO  inputApplication.Utility [(null)] - GetTemplateFileFromService:: Start
+2016-10-24 08:13:50,985 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 08:13:58,085 [10] INFO  inputApplication.Utility [(null)] - GetTemplateFileFromService:: Start
+2016-10-24 08:16:58,297 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 08:17:04,239 [10] INFO  inputApplication.Utility [(null)] - GetTemplateFileFromService:: Start
+2016-10-24 08:17:08,179 [10] INFO  inputApplication.Utility [(null)] - GetTemplateFileFromService:: Ends
+2016-10-24 08:17:15,129 [10] INFO  inputApplication.Utility [(null)] - GetTemplateFileFromService:: Start
+2016-10-24 08:17:16,974 [10] INFO  inputApplication.Utility [(null)] - GetTemplateFileFromService:: Ends
+2016-10-24 08:17:21,429 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Ends
+2016-10-24 08:17:32,874 [10] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-24 08:17:36,561 [10] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Ends
+2016-10-24 08:18:31,393 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 08:18:43,134 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 08:28:34,080 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 08:28:38,753 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 08:30:06,336 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 08:30:06,393 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 08:31:36,301 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 08:31:36,548 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 08:43:09,619 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 08:43:09,691 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:15:00,127 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 09:15:00,253 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:15:43,628 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 09:15:43,703 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:15:50,367 [10] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:15:50,369 [10] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:16:24,815 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 09:16:24,895 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:16:30,669 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:16:30,672 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:17:53,880 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 09:17:53,981 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:18:00,321 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:18:03,073 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:21:25,922 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 09:21:25,989 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:21:33,222 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:21:33,857 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:22:15,388 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:22:15,390 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:23:00,523 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:23:01,152 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:34:52,999 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 09:34:53,076 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:35:01,047 [10] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:35:01,639 [10] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:35:41,178 [10] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:35:41,182 [10] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:36:46,399 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 09:36:46,461 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:36:52,799 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:36:52,804 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:37:02,879 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:37:02,887 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:37:02,945 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:37:02,946 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:37:02,984 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:37:02,986 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:37:03,023 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:37:03,025 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:38:47,260 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 09:38:47,355 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:38:52,169 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 09:38:52,174 [9] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 09:38:52,206 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:38:52,208 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:38:52,241 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:38:52,243 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:38:52,260 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:38:52,262 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:40:44,758 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 09:40:44,825 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 09:40:49,110 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:40:49,112 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:40:49,124 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:40:49,126 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:40:49,134 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:40:49,136 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:40:54,900 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:40:54,903 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 09:41:16,691 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 09:41:16,697 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:28:30,980 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:28:31,046 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:28:35,906 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:28:35,909 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:28:35,914 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:28:35,916 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:28:35,921 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:28:35,923 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:28:42,132 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:28:42,135 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:30:04,002 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:30:04,058 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:30:06,607 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:30:06,614 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:30:06,619 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:30:06,621 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:30:06,626 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:30:06,628 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:30:09,450 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:30:09,452 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:30:14,553 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:30:14,555 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:32:22,065 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:32:22,131 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:32:25,629 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:32:25,637 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:32:25,643 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:32:25,644 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:32:25,652 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:32:25,654 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:32:30,100 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:32:30,108 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:32:36,405 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:32:36,408 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:32:55,202 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:32:55,207 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:35:16,259 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:35:16,339 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:36:22,021 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:36:22,083 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:36:24,322 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 10:36:24,742 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Ends
+2016-10-24 10:36:24,748 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:36:24,751 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:36:24,753 [8] INFO  inputApplication.Utility [(null)] - WriteDataToService:: Start inputparam = =
+2016-10-24 10:36:55,943 [8] ERROR inputApplication.Utility [(null)] - WriteDataToService:: System.Net.WebException: Den underliggende forbindelse blev lukket: Der opstod en uventet fejl ved modtagelse.. ---> System.IO.IOException: Der kunne ikke læses data fra transportforbindelsen: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært. ---> System.Net.Sockets.SocketException: En eksisterende forbindelse blev tvangsafbrudt af en ekstern vært
+   ved System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.PooledStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   ved System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.UploadDataInternal(Uri address, String method, Byte[] data, WebRequest& request)
+   ved System.Net.WebClient.UploadString(Uri address, String method, String data)
+   ved System.Net.WebClient.UploadString(String address, String method, String data)
+   ved inputApplication.Utility.WriteDataToService(String propertyValuesString) i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 266
+2016-10-24 10:36:55,945 [8] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-24 10:36:59,976 [8] ERROR inputApplication.Utility [(null)] - GetDataFromservice:: System.Net.WebException: Der kunne ikke oprettes forbindelse til fjernserveren ---> System.Net.Sockets.SocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det [::1]:65184
+   ved System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   ved System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.OpenRead(Uri address)
+   ved System.Net.WebClient.OpenRead(String address)
+   ved inputApplication.Utility.GetDataFromService() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 207
+2016-10-24 10:38:22,931 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:38:23,011 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:38:25,534 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 10:38:27,656 [8] ERROR inputApplication.Utility [(null)] - GetTemplateDataFromService:: System.Net.WebException: Der kunne ikke oprettes forbindelse til fjernserveren ---> System.Net.Sockets.SocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det [::1]:65184
+   ved System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   ved System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.OpenRead(Uri address)
+   ved System.Net.WebClient.OpenRead(String address)
+   ved inputApplication.Utility.GetTemplateDataFromService() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 231
+2016-10-24 10:38:27,657 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:38:27,660 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:41:34,055 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:41:34,135 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:41:35,987 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 10:41:38,103 [8] ERROR inputApplication.Utility [(null)] - GetTemplateDataFromService:: System.Net.WebException: Der kunne ikke oprettes forbindelse til fjernserveren ---> System.Net.Sockets.SocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det [::1]:65184
+   ved System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   ved System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.OpenRead(Uri address)
+   ved System.Net.WebClient.OpenRead(String address)
+   ved inputApplication.Utility.GetTemplateDataFromService() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 231
+2016-10-24 10:41:41,421 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:41:50,814 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:42:01,105 [8] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-24 10:42:03,122 [8] ERROR inputApplication.Utility [(null)] - GetDataFromservice:: System.Net.WebException: Der kunne ikke oprettes forbindelse til fjernserveren ---> System.Net.Sockets.SocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det [::1]:65184
+   ved System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   ved System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- Slut på staksporing af indre undtagelser ---
+   ved System.Net.WebClient.OpenRead(Uri address)
+   ved System.Net.WebClient.OpenRead(String address)
+   ved inputApplication.Utility.GetDataFromService() i C:\Compare\inputApplication\inputApplication\Utility.cs:linje 207
+2016-10-24 10:42:04,545 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:42:04,547 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:42:39,540 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:42:39,609 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:42:42,299 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 10:42:42,652 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Ends
+2016-10-24 10:42:44,454 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:42:44,458 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:42:44,459 [9] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-24 10:42:44,540 [9] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Ends
+2016-10-24 10:42:47,027 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:42:47,030 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:43:01,888 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:43:01,889 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:43:01,893 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:43:01,895 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:43:01,900 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:43:01,906 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:43:06,606 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:43:06,610 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:43:11,463 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:43:11,466 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:44:08,008 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:44:08,060 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:44:14,073 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 10:44:14,197 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Ends
+2016-10-24 10:44:15,697 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:44:15,700 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:44:15,701 [9] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-24 10:44:15,834 [9] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Ends
+2016-10-24 10:44:57,192 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:44:57,263 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:44:59,564 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 10:44:59,679 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Ends
+2016-10-24 10:44:59,682 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:44:59,699 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:44:59,700 [9] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-24 10:44:59,777 [9] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Ends
+2016-10-24 10:46:17,885 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:46:17,944 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:46:20,168 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 10:46:20,296 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Ends
+2016-10-24 10:46:20,308 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:46:20,315 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:46:20,316 [10] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-24 10:46:20,419 [10] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Ends
+2016-10-24 10:51:44,425 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:51:44,476 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:51:47,294 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 10:51:47,415 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Ends
+2016-10-24 10:51:47,417 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:51:47,421 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:51:47,423 [8] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-24 10:51:47,501 [8] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Ends
+2016-10-24 10:56:56,760 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:56:56,830 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 10:56:59,294 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Start
+2016-10-24 10:56:59,423 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromService:: Ends
+2016-10-24 10:56:59,426 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 10:56:59,432 [9] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 10:56:59,433 [9] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Start
+2016-10-24 10:56:59,525 [9] INFO  inputApplication.Utility [(null)] - GetDataFromservice:: Ends
+2016-10-24 10:57:01,306 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 10:57:01,308 [9] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 22:09:38,269 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 22:09:38,357 [10] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 22:09:42,167 [10] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 22:09:42,170 [10] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 22:09:42,206 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 22:09:42,209 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 22:09:42,276 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 22:09:42,278 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 22:09:42,309 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 22:09:42,312 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 22:09:42,338 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 22:09:42,339 [10] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 22:10:38,805 [10] INFO  inputApplication.Utility [(null)] - GetFileName:: Start inputparam = HomeAppliances-FridgeFreezers-PEL-M1_TEST_1.json
+2016-10-24 22:15:59,805 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Start
+2016-10-24 22:15:59,885 [8] INFO  inputApplication.Utility [(null)] - GetTemplateDataFromFile:: Ends
+2016-10-24 22:16:03,100 [8] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Start
+2016-10-24 22:16:03,104 [8] INFO  inputApplication.Utility [(null)] - GetJsonFromFile:: Ends
+2016-10-24 22:16:03,161 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 22:16:03,169 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 22:16:03,231 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 22:16:03,232 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 22:16:03,256 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 22:16:03,258 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 22:16:03,277 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Start
+2016-10-24 22:16:03,279 [8] INFO  inputApplication.Utility [(null)] - GetDataFromFile:: Ends
+2016-10-24 22:16:49,578 [8] INFO  inputApplication.Utility [(null)] - GetFileName:: Start inputparam = HomeAppliances-FridgeFreezers-Samsung-M1_TEST_1.json
